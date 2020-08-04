@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         myText.text = "THIS IS MY NEW APP...."
 
         myBtn.setOnClickListener {
+            startActivity(Intent(this@MainActivity, NewActivity::class.java))
             Toast.makeText(this, "button is clicked", Toast.LENGTH_LONG).show()
             myText.text = "Text is changed  on button  click.."
         }
